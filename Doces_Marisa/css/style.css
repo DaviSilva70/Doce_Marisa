@@ -1,0 +1,104 @@
+/*Elememtos Base */
+:root{
+    --vermelho:#e50914;/*Declaraçao da Var Cor (Logo)*/
+    --preta:#141414;/*Declaraçao de Var Cor (Fundo)*/
+}
+
+/* Zerando as Mergine Padding */
+*{
+    padding: 0;/*Zera o Espaçamento do Topo da Pagina */
+    margin: 0;/*Zera as Mergins*/
+    box-sizing: border-box;/*Cria-se uma Caixa Limita-se */
+}
+
+body{
+    background:var(--preta);/*Cor do Corpo da Pagina*/
+    font-family:Arial ;/* Estilo de Fontes */
+    color: white;/*Cor do Corpo */
+}
+
+header .container{
+    display: flex;/*Alinhar os Elementos em Tela */
+    flex-direction: row;/*Alinha em Linhas */
+    align-items: center;/*Alinha os Itens */
+    justify-content:space-between;/*Alinhamento dos Elementos ao Centro*/
+}
+
+header .logo{
+    font-family:Ariel;/*Estilos de Fontes */
+    color: var(--vermelho);/*Cor da Fonte*/
+    font-size: 40px;/*Tamanho da Fonte*/
+    margin-left: 5px;/*Margin a Esquerda*/
+}
+
+header nav a{
+    text-decoration:none;/*Retira do Texto a Linha Abaixo dele */
+    color: #aaa;/*Cor do Texto*/
+    margin-right: 10px;/*Margin entre os Textos*/
+}
+header nav a:hover{
+    color:white;/* Altera a cor dos Links */
+}
+
+
+/* Filme Principal */
+
+.filme-principal{
+    font-size: 16px;/*Tamanho da Fonte*/
+    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa_principal.jpg');/*Caminho da Imagen*/
+    background-size:cover;
+    height: 450px;/*Altura da Imagen*/
+    display: flex;/*Joga os Elementos Sempre em Linha*/
+    flex-direction: column;/*Todos os Elementos Foram Jogados como Colunas*/
+    justify-content: center;/*Justificar os Elementos ao Centro */
+    align-items: flex-start;/*Alinha o Elementos a Direita */
+}
+
+.filme-principal .descricao{
+    margin-bottom: 60px;/*Margin do Botao em Relacao ao Texto*/
+    margin-top: 10px;/* Margin do Texto */
+}
+
+.titulo{
+    margin-top: 15%;/*Margin entre os Textos */
+    font-size: 40px;/*Tamanho da Fonte*/ 
+    font-family: "Trebuchet",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  /*Estilos de Fontes*/
+}
+
+.botao{
+    background-color:rgba(0, 0, 0,.50);/*Cor do Fundo com uma Leve Tonalidade.*/
+    border: none;/*Sem Bordas */
+    color: white;/*Cor do Texto*/
+    padding: 15px 30px;/*Espacamento dentro da Caixa do Botao*/
+    margin-right: 15px;/*Margin a Esquerda*/
+    font-size: 12px;/*Tamanho da Fonte */
+    cursor: pointer;/* Altera o Cursor do Mouse */
+    transition: .3s ease all;/*Transisao ao Passar o Mouse de 3 Segundos */
+}
+
+.botao:hover{
+    background-color:rgb(255, 255, 255);/*Cor do Fundo*/
+    color:black;/*Cor ao Passar o Mouse */
+}
+
+.botao i{
+    margin-right: 8px;/*Espacamento dos Icones dentro do Botao */
+}
+
+.container{
+    margin-left: 15px;/*Altura da Margin*/
+}
+
+.filme-principal .container{
+    width: 70%;/* Altura */
+}
+
+.box-filme{
+    height: 35%;
+    width:35%px;
+    display:block;
+}
+
+.carrosel-filme{
+    margin-top: 5px;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fe540b0-2275-4cca-a087-84def05c0412" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/css/style.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/js/owl/owl.carousel.min.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/js/owl/jquery.min.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/js/setup.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/css/owl/owl.carousel.min.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/css/owl/owl.theme.default.min.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1ghOEqY0euNtTlZinLE4BSyyqTg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fe540b0-2275-4cca-a087-84def05c0412" name="Default Changelist" comment="" />
+      <created>1598563249058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598563249058</updated>
+      <workItem from="1598563250094" duration="424000" />
+      <workItem from="1598647277695" duration="248000" />
+      <workItem from="1598663483314" duration="1174000" />
+      <workItem from="1598736047418" duration="392000" />
+      <workItem from="1598742815501" duration="1258000" />
+      <workItem from="1598799792076" duration="1078000" />
+      <workItem from="1598801817450" duration="1026000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="175" y="0" key="#Intentions" timestamp="1598736287370">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="175" y="0" key="#Intentions/0.0.1366.738/1366.0.1440.870@0.0.1366.738" timestamp="1598736287370" />
+  </component>
+</project>
