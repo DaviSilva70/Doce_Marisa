@@ -1,0 +1,31 @@
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.log
+
+# Dependências (se usar npm no futuro)
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Imagens duplicadas não utilizadas (manter apenas as usadas no projeto)
+Doces_Marisa/img/Bombom.jpg
+Doces_Marisa/img/brigadeiro.jpg
+Doces_Marisa/img/combo_2020.jpg
+Doces_Marisa/img/doce_001.jpg
+Doces_Marisa/img/salgado-assado-2.jpg
+Doces_Marisa/img/salgado_assado_2020.jpg

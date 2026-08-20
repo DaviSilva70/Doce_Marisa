@@ -1,95 +1,140 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Netflix </title>
-    <link rel="stylesheet" href="css/style.css">
-    <!--Arquivos OWL Css--> 
-    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
-     <!--Responsividade-->
-     <link rel="stylesheet" href="css/responsive.css">
+    <meta name="description" content="Marisa Doces - Os melhores doces e bolos artesanais da região. Faça seu pedido pelo WhatsApp!">
+    <meta name="keywords" content="doces, bolos, artesanais, brigadeiros, salgados, confeitaria">
+    <meta name="author" content="Marisa Doces">
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Marisa Doces - Doces e Bolos Artesanais">
+    <meta property="og:description" content="Os melhores doces e bolos artesanais da região. Faça seu pedido pelo WhatsApp!">
+    <meta property="og:image" content="img/capa_principal.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Marisa Doces - Doces e Bolos Artesanais">
+    <meta property="twitter:description" content="Os melhores doces e bolos artesanais da região. Faça seu pedido pelo WhatsApp!">
+    <meta property="twitter:image" content="img/capa_principal.jpg">
+
+    <title>Marisa Doces - Doces e Bolos Artesanais</title>
+    <link rel="icon" type="image/png" href="img/brigadeiro.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Arquivos OWL CSS -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Corpo do Programa -->
- <header>   
+    <!-- Cabeçalho -->
+    <header id="inicio">
         <div class="container">
             <h2 class="logo">Marisa Doces</h2>
-                <nav>
-                    <!-- Menu de Navegaçao -->
-                    <a href="#"> Inicio </a>
-                    <a href="#"> Bolos</a>   
-                    <a href="#"> Sobremesas </a>
-                    <a href="#"> Contato </a>    
-                </nav>       
-
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
         </div>
- </header>
+    </header>
 
-<main>  
-    <div class="filme-principal">
+    <main>
+        <!-- Seção Principal -->
+        <section class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">Os Melhores Doces da Região</h3>
+                <p class="descricao">
+                    Experiência em doces e bolos artesanais.
+                    Faça seu pedido agora mesmo!
+                </p>
+                <a href="https://wa.me/5541996255585" target="_blank" class="botao">
+                    <i class="fab fa-whatsapp"></i>
+                    Peça Agora
+                </a>
+                <a href="#sobre" class="botao">
+                    <i class="fas fa-info-circle"></i>
+                    Mais Informações
+                </a>
+            </div>
+        </section>
 
+        <!-- Carrossel de Produtos -->
+        <section id="produtos" class="carrosel-filme">
+            <h4 class="section-title">Nossos Produtos</h4>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/bolo_03.png" alt="Bolo de creme decorado">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/salgado_assado_2020.png" alt="Salgado assado especial">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/salgado-assado-2.png" alt="Salgado assado tradicional">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/combo_2020.png" alt="Combo de doces e salgados">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/brigadeiro.png" alt="Brigadeiro de morango">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/doce_001.png" alt="Doces variados">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/Logo.jpg" alt="Logo Marisa Doces">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre" class="sobre-section">
+            <div class="container">
+                <h4 class="section-title">Sobre Nós</h4>
+                <p>
+                    A Marisa Doces é uma confeitaria artesanal que oferece os melhores doces e bolos da região.
+                    Com ingredientes selecionados e receitas tradicionais, preparamos cada doce com carinho e dedicação
+                    para tornar seus momentos ainda mais especiais.
+                </p>
+                <p>
+                    Trabalhamos com pedidos para festas, aniversários, casamentos e eventos corporativos.
+                    Entre em contato e faça seu pedido!
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="contato-section">
+            <div class="container">
+                <h4 class="section-title">Contato</h4>
+                <div class="contato-info">
+                    <p><i class="fas fa-phone"></i> WhatsApp: (41) 99625-5585</p>
+                    <p><i class="fas fa-map-marker-end"></i> Curitiba - PR</p>
+                    <a href="https://wa.me/5541996255585" target="_blank" class="botao botao-contato">
+                        <i class="fab fa-whatsapp"></i>
+                        Fale Conosco
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
         <div class="container">
-                <h3 class="titulo"> Os Melhores Doces da Regiao </h3>
-                    <p class="descricao"> Experiencia
-                        Doces e Bolos em Geral.
-                         Faça seu Pedido.
-                        Whatszap:(41) 99625-5585. 
-                    </p>
-                    <button role="button" class="botao">
-                        <i class="fas fa-play"></i>
-                        Peça Agora 
-                    </button>
-                    <button role="button" class="botao">
-                        <i class="fas fa-info-circle"></i>
-                        Mais Informaçoes.
-                    </button>          
-         </div>   
-                 
-    </div>
-
-</main>
-            <!-- Estrutura do Carrosel -->
-        <div class="carrosel-filmes">
-               <div class="owl-carousel owl-theme">
-                        <!--Imagens_1 Grey_Anatomy-->
-                       <div class="item"> 
-                            <img class="box-filme" src="img/bolo_03.png" alt="Bolo_Creme" srcset="">
-                       </div>
-                            <!--Imagem_2 Rei_Leao -->
-                       <div class="item"> 
-                            <img class="box-filme" src="img/salgado_assado_2020.png" alt="salgado_assado" srcset="">
-                       </div>
-                            <!--Imagem_3 Star_Wars -->
-                      <div class="item">
-                          <img class="box-filme" src="img/salgado-assado-2.png" alt="salgado-assado-2" srcset="">
-                      </div>
-                        <!--Imagen_4 Herry_Potter-->
-                      <div class="item">
-                          <img class="box-filme" src="img/combo_2020.png" alt="Combo_Doce_Salgado" srcset="">
-                      </div>
-                   <!--Imagen_5 Liga da Justiça -->
-                      <div class="item">
-                          <img class="box-filme" src="img/brigadeiro.png" alt="Brigadeiro_Morango" srcset="">
-                      </div>
-                   <!--Imagen_6 Frozen_2-->
-                      <div class="item">
-                          <img class="box-filme" src="img/doce_001.png" alt="Doces_001" srcset="">
-                      </div>
-                   <!-- Imagen_7 Games_Of_Thones -->
-                       <div class="item">
-                           <img class="box-filme" src="img/Logo.jpg" alt="Imagen_7_Logo" srcset="">
-                       </div>
-               </div>   
+            <p>&copy; 2024 Marisa Doces - Todos os direitos reservados</p>
         </div>
-                <!--Arquivos dos Botoes -->
-     <script src="https://kit.fontawesome.com/25b213e74c.js" crossorigin="anonymous"> </script>
-        <!--Arquivos JS -->
-        <script src="js/owl/jquery.min.js"></script>
-        <script src="js/owl/owl.carousel.min.js"></script>
-       <script src="js/owl/setup.js"></script>
+    </footer>
 
+    <!-- Script Font Awesome -->
+    <script src="https://kit.fontawesome.com/25b213e74c.js" crossorigin="anonymous"></script>
+    <!-- Scripts JS -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>

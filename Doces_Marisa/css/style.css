@@ -1,104 +1,215 @@
-/*Elememtos Base */
-:root{
-    --vermelho:#e50914;/*Declaraçao da Var Cor (Logo)*/
-    --preta:#141414;/*Declaraçao de Var Cor (Fundo)*/
+/* Elementos Base */
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+    --dourado: #f5c518;
 }
 
-/* Zerando as Mergine Padding */
-*{
-    padding: 0;/*Zera o Espaçamento do Topo da Pagina */
-    margin: 0;/*Zera as Mergins*/
-    box-sizing: border-box;/*Cria-se uma Caixa Limita-se */
+/* Zerando Margin e Padding */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background:var(--preta);/*Cor do Corpo da Pagina*/
-    font-family:Arial ;/* Estilo de Fontes */
-    color: white;/*Cor do Corpo */
+html {
+    scroll-behavior: smooth;
 }
 
-header .container{
-    display: flex;/*Alinhar os Elementos em Tela */
-    flex-direction: row;/*Alinha em Linhas */
-    align-items: center;/*Alinha os Itens */
-    justify-content:space-between;/*Alinhamento dos Elementos ao Centro*/
+body {
+    background: var(--preta);
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
-header .logo{
-    font-family:Ariel;/*Estilos de Fontes */
-    color: var(--vermelho);/*Cor da Fonte*/
-    font-size: 40px;/*Tamanho da Fonte*/
-    margin-left: 5px;/*Margin a Esquerda*/
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: rgba(20, 20, 20, 0.95);
+    padding: 15px 0;
 }
 
-header nav a{
-    text-decoration:none;/*Retira do Texto a Linha Abaixo dele */
-    color: #aaa;/*Cor do Texto*/
-    margin-right: 10px;/*Margin entre os Textos*/
-}
-header nav a:hover{
-    color:white;/* Altera a cor dos Links */
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-
-/* Filme Principal */
-
-.filme-principal{
-    font-size: 16px;/*Tamanho da Fonte*/
-    background:linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa_principal.jpg');/*Caminho da Imagen*/
-    background-size:cover;
-    height: 450px;/*Altura da Imagen*/
-    display: flex;/*Joga os Elementos Sempre em Linha*/
-    flex-direction: column;/*Todos os Elementos Foram Jogados como Colunas*/
-    justify-content: center;/*Justificar os Elementos ao Centro */
-    align-items: flex-start;/*Alinha o Elementos a Direita */
+header .logo {
+    font-family: Arial, sans-serif;
+    color: var(--vermelho);
+    font-size: 40px;
+    margin-left: 5px;
 }
 
-.filme-principal .descricao{
-    margin-bottom: 60px;/*Margin do Botao em Relacao ao Texto*/
-    margin-top: 10px;/* Margin do Texto */
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 20px;
+    transition: color 0.3s ease;
 }
 
-.titulo{
-    margin-top: 15%;/*Margin entre os Textos */
-    font-size: 40px;/*Tamanho da Fonte*/ 
-    font-family: "Trebuchet",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  /*Estilos de Fontes*/
+header nav a:hover {
+    color: white;
 }
 
-.botao{
-    background-color:rgba(0, 0, 0,.50);/*Cor do Fundo com uma Leve Tonalidade.*/
-    border: none;/*Sem Bordas */
-    color: white;/*Cor do Texto*/
-    padding: 15px 30px;/*Espacamento dentro da Caixa do Botao*/
-    margin-right: 15px;/*Margin a Esquerda*/
-    font-size: 12px;/*Tamanho da Fonte */
-    cursor: pointer;/* Altera o Cursor do Mouse */
-    transition: .3s ease all;/*Transisao ao Passar o Mouse de 3 Segundos */
+/* Seção Principal */
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50) 100%), url('../img/capa_principal.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 80px;
 }
 
-.botao:hover{
-    background-color:rgb(255, 255, 255);/*Cor do Fundo*/
-    color:black;/*Cor ao Passar o Mouse */
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    max-width: 500px;
+    line-height: 1.6;
 }
 
-.botao i{
-    margin-right: 8px;/*Espacamento dos Icones dentro do Botao */
+.titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: "Trebuchet", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.container{
-    margin-left: 15px;/*Altura da Margin*/
+/* Botões */
+.botao {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
-.filme-principal .container{
-    width: 70%;/* Altura */
+.botao:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
-.box-filme{
-    height: 35%;
-    width:35%px;
-    display:block;
+.botao i {
+    margin-right: 8px;
 }
 
-.carrosel-filme{
+/* Container */
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+/* Títulos de Seção */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: var(--dourado);
+    text-align: center;
+}
+
+/* Carrossel */
+.box-filme {
+    height: 200px;
+    width: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.box-filme:hover {
+    transform: scale(1.05);
+}
+
+.carrosel-filme {
     margin-top: 5px;
+    padding: 40px 0;
+}
+
+/* Seção Sobre */
+.sobre-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.sobre-section p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* Seção Contato */
+.contato-section {
+    padding: 60px 0;
+    background: var(--preta);
+    text-align: center;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contato-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contato-info i {
+    margin-right: 10px;
+    color: var(--dourado);
+}
+
+.botao-contato {
+    background-color: #25d366;
+    color: white;
+    margin-top: 20px;
+}
+
+.botao-contato:hover {
+    background-color: #128c7e;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background: #0d0d0d;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #888;
+    font-size: 14px;
 }
