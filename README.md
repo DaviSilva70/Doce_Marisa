@@ -3,6 +3,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
   <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="jQuery">
   <img src="https://img.shields.io/badge/Licença-MIT-green" alt="License">
 </p>
@@ -37,11 +39,15 @@ Criar uma presença digital profissional para o negócio de doces e bolos artesa
 | Funcionalidade | Descrição |
 |----------------|-----------|
 | 🎠 **Carrossel Interativo** | Apresentação dos produtos com Owl Carousel |
-| 📱 **Layout Responsivo** | Adaptado para mobile, tablet e desktop |
+| 📱 **Layout Responsivo** | Adaptado para mobile, tablet e desktop com Bootstrap |
 | 💬 **Pedidos via WhatsApp** | Links diretos para facilitar o contato |
-| 🧭 **Navegação Suave** | Scroll animado entre seções |
+| 🧭 **Navegação Suave** | Scroll animado entre seções com JavaScript |
 | 🔍 **SEO Otimizado** | Meta tags para melhor posicionamento |
-| 🎨 **Design Moderno** | Interface limpa e profissional |
+| 🎨 **Design Moderno** | Interface limpa e profissional com Bootstrap |
+| ⚡ **Interações Dinâmicas** | Efeitos visuais e animações com JavaScript |
+| 🎯 **Componentes Reutilizáveis** | Cards, botões e formulários com Bootstrap |
+| 📧 **Formulário de Contato** | Validação e envio de mensagens com JavaScript |
+| 🌓 **Modo Escuro** | Toggle para alternância de temas com CSS Variables |
 
 ---
 
@@ -49,11 +55,13 @@ Criar uma presença digital profissional para o negócio de doces e bolos artesa
 
 | Tecnologia | Versão | Uso |
 |------------|--------|-----|
-| **HTML5** | - | Estrutura semântica |
-| **CSS3** | - | Estilização e responsividade |
+| **HTML5** | 5 | Estrutura semântica e acessível |
+| **CSS3** | 3 | Estilização avançada e responsividade |
 | **CSS Variables** | - | Temas e cores customizáveis |
-| **jQuery** | 3.x | Biblioteca JavaScript |
-| **Owl Carousel 2** | 2.x | Componente de carrossel |
+| **Bootstrap** | 5.x | Framework CSS para layout responsivo e componentes |
+| **JavaScript** | ES6+ | Interações dinâmicas e manipulação do DOM |
+| **jQuery** | 3.x | Biblioteca JavaScript para simplificar manipulação DOM |
+| **Owl Carousel 2** | 2.x | Componente de carrossel responsivo |
 | **Font Awesome** | 5.x | Ícones e elementos visuais |
 
 ---
@@ -90,6 +98,14 @@ Criar uma presença digital profissional para o negócio de doces e bolos artesa
 
 ---
 
+## 📸 Screenshots
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Desktop](screenshots/desktop.png) | ![Mobile](screenshots/mobile.png) |
+
+---
+
 ## 📁 Estrutura do Projeto
 
 ```
@@ -106,17 +122,24 @@ Doce_Marisa/
     │   └── owl/            # Estilos do carrossel
     │
     ├── js/
+    │   ├── main.js         # Scripts principais
+    │   ├── animations.js   # Animações JavaScript
+    │   ├── form.js         # Validação de formulário
     │   └── owl/            # Scripts do carrossel
     │       ├── jquery.min.js
     │       ├── owl.carousel.min.js
     │       └── setup.js    # Configuração do carrossel
     │
-    └── img/                # Imagens do projeto
-        ├── capa_principal.jpg
-        ├── bolo_03.png
-        ├── brigadeiro.png
-        ├── combo_2020.png
-        └── ...
+    ├── img/                # Imagens do projeto
+    │   ├── capa_principal.jpg
+    │   ├── bolo_03.png
+    │   ├── brigadeiro.png
+    │   ├── combo_2020.png
+    │   └── ...
+    │
+    └── screenshots/        # Capturas de tela para documentação
+        ├── desktop.png
+        └── mobile.png
 ```
 
 ---
@@ -129,6 +152,23 @@ Doce_Marisa/
 | ⚫ Preto | Fundo principal | `#141414` |
 | 🟡 Dourado | Títulos de seção | `#f5c518` |
 | ⚪ Branco | Textos | `#ffffff` |
+| 🔵 Bootstrap Primary | Botões e links | `#0d6efd` |
+| 🟢 Bootstrap Success | Elementos de sucesso | `#198754` |
+
+---
+
+## 🎨 Recursos CSS3
+
+| Recurso | Descrição |
+|---------|-----------|
+| **Flexbox** | Layout responsivo e alinhamento de elementos |
+| **Grid** | Sistema de grade para organizar conteúdo |
+| **CSS Variables** | Variáveis customizáveis para temas |
+| **Media Queries** | Breakpoints para diferentes dispositivos |
+| **Transições** | Efeitos de hover e animações suaves |
+| **Gradientes** | Fundos com degradê para efeitos visuais |
+| **Box Shadows** | Sombras para elementos com profundidade |
+| **Border Radius** | Bordas arredondadas para cards e botões |
 
 ---
 
@@ -150,10 +190,15 @@ O site é totalmente responsivo e funciona em:
 - [x] Implementados links para WhatsApp
 - [x] Criadas seções "Sobre" e "Contato"
 - [x] Adicionado rodapé profissional
-- [x] Otimizada responsividade
+- [x] Otimizada responsividade com Bootstrap
 - [x] Removidos arquivos desnecessários (.idea)
 - [x] Adicionado `.gitignore`
 - [x] Corrigidos erros de CSS
+- [x] Implementado JavaScript para interações dinâmicas
+- [x] Adicionado Bootstrap para componentes reutilizáveis
+- [x] Criado formulário de contato com validação
+- [x] Implementado modo escuro com CSS Variables
+- [x] Adicionadas animações de scroll com JavaScript
 
 ---
 
